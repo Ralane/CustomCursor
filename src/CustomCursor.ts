@@ -1,29 +1,29 @@
 import {Plugin, SettingsTypes} from "@highlite/plugin-api";
 
-import Bronze_scimitar from '../resources/images/customCursor/customCursor/Bronze_scimitar.png';
-import Celadon_scimitar from '../resources/images/customCursor/customCursor/Celadon_scimitar.png';
-import Chicken_39 from '../resources/images/customCursor/customCursor/Chicken_39.png';
-import Chisel from '../resources/images/customCursor/customCursor/Chisel.png';
-import Coronium_scimitar from '../resources/images/customCursor/customCursor/Coronium_scimitar.png';
-import Damoguis_staff from '../resources/images/customCursor/customCursor/Damoguis_staff.png';
-import Ember_staff from '../resources/images/customCursor/customCursor/Ember_staff.png';
-import Fires_Fury from '../resources/images/customCursor/customCursor/Fires_Fury.png';
-import Forest_staff from '../resources/images/customCursor/customCursor/Forest_staff.png';
-import Gnomes_hat from '../resources/images/customCursor/customCursor/Gnomes_hat.png';
-import Golden_leaf from '../resources/images/customCursor/customCursor/Golden_leaf.png';
-import Hydro_staff from '../resources/images/customCursor/customCursor/Hydro_staff.png';
-import Iron_scimitar from '../resources/images/customCursor/customCursor/Iron_scimitar.png';
-import Knife from '../resources/images/customCursor/customCursor/Knife.png';
-import Leaf from '../resources/images/customCursor/customCursor/Leaf.png';
-import Legendary_scimitar from '../resources/images/customCursor/customCursor/Legendary_scimitar.png';
-import Marlin from '../resources/images/customCursor/customCursor/Marlin.png';
-import Natures_Fury from '../resources/images/customCursor/customCursor/Natures_Fury.png';
-import Palladium_scimitar from '../resources/images/customCursor/customCursor/Palladium_scimitar.png';
-import Raw_marlin from '../resources/images/customCursor/customCursor/Raw_marlin.png';
-import Rooster_117 from '../resources/images/customCursor/customCursor/Rooster_117.png';
-import Shovel from '../resources/images/customCursor/customCursor/Shovel.png';
-import Steel_scimitar from '../resources/images/customCursor/customCursor/Steel_scimitar.png';
-import Waters_Fury from '../resources/images/customCursor/customCursor/Waters_Fury.png';
+import Bronze_scimitar from '../resources/images/customCursor/Bronze_scimitar.png';
+import Celadon_scimitar from '../resources/images/customCursor/Celadon_scimitar.png';
+import Chicken_39 from '../resources/images/customCursor/Chicken_39.png';
+import Chisel from '../resources/images/customCursor/Chisel.png';
+import Coronium_scimitar from '../resources/images/customCursor/Coronium_scimitar.png';
+import Damoguis_staff from '../resources/images/customCursor/Damoguis_staff.png';
+import Ember_staff from '../resources/images/customCursor/Ember_staff.png';
+import Fires_Fury from '../resources/images/customCursor/Fires_Fury.png';
+import Forest_staff from '../resources/images/customCursor/Forest_staff.png';
+import Gnomes_hat from '../resources/images/customCursor/Gnomes_hat.png';
+import Golden_leaf from '../resources/images/customCursor/Golden_leaf.png';
+import Hydro_staff from '../resources/images/customCursor/Hydro_staff.png';
+import Iron_scimitar from '../resources/images/customCursor/Iron_scimitar.png';
+import Knife from '../resources/images/customCursor/Knife.png';
+import Leaf from '../resources/images/customCursor/Leaf.png';
+import Legendary_scimitar from '../resources/images/customCursor/Legendary_scimitar.png';
+import Marlin from '../resources/images/customCursor/Marlin.png';
+import Natures_Fury from '../resources/images/customCursor/Natures_Fury.png';
+import Palladium_scimitar from '../resources/images/customCursor/Palladium_scimitar.png';
+import Raw_marlin from '../resources/images/customCursor/Raw_marlin.png';
+import Rooster_117 from '../resources/images/customCursor/Rooster_117.png';
+import Shovel from '../resources/images/customCursor/Shovel.png';
+import Steel_scimitar from '../resources/images/customCursor/Steel_scimitar.png';
+import Waters_Fury from '../resources/images/customCursor/Waters_Fury.png';
 
 
 export class CustomCursor extends Plugin {
