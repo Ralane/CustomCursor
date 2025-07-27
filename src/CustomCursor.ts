@@ -26,7 +26,7 @@ import Steel_scimitar from '../resources/images/customCursor/Steel_scimitar.png'
 import Waters_Fury from '../resources/images/customCursor/Waters_Fury.png';
 
 
-export class CustomCursor extends Plugin {
+export default class CustomCursor extends Plugin {
     pluginName: string = 'Custom Cursor';
     author = '0rangeYouGlad';
 
@@ -50,7 +50,7 @@ export class CustomCursor extends Plugin {
         this.settings.cursorImagePresets = {
             text: 'Cursor Presets',
             type: SettingsTypes.range,
-            value: 1,
+            value: 0,
             callback: this.reset_cursor,
         } as any;
 
