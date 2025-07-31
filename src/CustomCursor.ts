@@ -25,6 +25,15 @@ import Shovel from '../resources/images/customCursor/Shovel.png';
 import Steel_scimitar from '../resources/images/customCursor/Steel_scimitar.png';
 import Waters_Fury from '../resources/images/customCursor/Waters_Fury.png';
 
+import Bronze_longsword from '../resources/images/customCursor/Bronze_longsword.png';
+import Celadon_longsword from '../resources/images/customCursor/Celadon_longsword.png';
+import Coronium_longsword from '../resources/images/customCursor/Coronium_longsword.png';
+import Iron_longsword from '../resources/images/customCursor/Iron_longsword.png';
+import Legendary_longsword from '../resources/images/customCursor/Legendary_longsword.png';
+import Nisse from '../resources/images/customCursor/Nisse.png';
+import Palladium_longsword from '../resources/images/customCursor/Palladium_longsword.png';
+import Steel_longsword from '../resources/images/customCursor/Steel_longsword.png';
+import Nisse_small from '../resources/images/customCursor/nisse_small.png';
 
 export default class CustomCursor extends Plugin {
     pluginName: string = 'Custom Cursor';
@@ -87,7 +96,16 @@ export default class CustomCursor extends Plugin {
         Shovel,
         Chisel,
         Knife,
-        Gnomes_hat
+        Gnomes_hat,
+        Bronze_longsword,
+        Iron_longsword,
+        Steel_longsword,
+        Palladium_longsword,
+        Coronium_longsword,
+        Celadon_longsword,
+        Legendary_longsword,
+        Nisse_small,
+        Nisse,
       ]
 
     get_png_from_preset() {
