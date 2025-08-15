@@ -1,4 +1,4 @@
-import {Plugin, SettingsTypes} from "@highlite/plugin-api";
+import {Plugin, SettingsTypes} from "@highlite/core";
 
 import Bronze_scimitar from '../resources/images/customCursor/Bronze_scimitar.png';
 import Celadon_scimitar from '../resources/images/customCursor/Celadon_scimitar.png';
@@ -39,38 +39,7 @@ export default class CustomCursor extends Plugin {
     pluginName: string = 'Custom Cursor';
     author = '0rangeYouGlad';
 
-    constructor() {
-        super();
-
-        this.settings.cursorOffset = {
-            text: 'Cursor Offset',
-            type: SettingsTypes.text,
-            value: "auto",
-            callback: this.reset_cursor,
-        } as any;
-
-        this.settings.cursorImportant = {
-            text: 'Cursor Important (Hover and Click)',
-            type: SettingsTypes.checkbox,
-            value: true,
-            callback: this.reset_cursor,
-        } as any;
-
-        this.settings.cursorImagePresets = {
-            text: 'Cursor Presets',
-            type: SettingsTypes.range,
-            value: 0,
-            callback: this.reset_cursor,
-        } as any;
-
-        this.settings.cursorCustomImage = {
-            text: 'Cursor Custom Image',
-            type: SettingsTypes.text,
-            value: "",
-            callback: this.reset_cursor,
-        } as any;
-    }
-
+    
     // Don't think it's feasible to use the copy alredy in the game files unfortunately, need a separate png
     private images = [
         Legendary_scimitar,
@@ -107,6 +76,40 @@ export default class CustomCursor extends Plugin {
         Nisse_small,
         Nisse,
       ]
+
+    constructor() {
+        super();
+
+        this.settings.cursorOffset = {
+            text: 'Cursor Offset',
+            type: SettingsTypes.text,
+            value: "auto",
+            callback: this.reset_cursor,
+        } as any;
+
+        this.settings.cursorImportant = {
+            text: 'Cursor Important (Hover and Click)',
+            type: SettingsTypes.checkbox,
+            value: true,
+            callback: this.reset_cursor,
+        } as any;
+
+        this.settings.cursorImagePresets = {
+            text: 'Cursor Presets',
+            type: SettingsTypes.range,
+            value: 0,
+            min: 0,
+            max: this.images.length - 1,
+            callback: this.reset_cursor,
+        } as any;
+
+        this.settings.cursorCustomImage = {
+            text: 'Cursor Custom Image',
+            type: SettingsTypes.text,
+            value: "",
+            callback: this.reset_cursor,
+        } as any;
+    }
 
     get_png_from_preset() {
         if(this.images[this.settings.cursorImagePresets.value]) {
